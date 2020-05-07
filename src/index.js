@@ -1,0 +1,16 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './containers/App.js';
+import { ParallaxProvider } from 'react-scroll-parallax';
+
+const Main = () => (
+  <ParallaxProvider>
+    <App />
+  </ParallaxProvider>
+);
+
+
+ReactDOM.render((
+    <Main />
+  ),
+  document.getElementById('root'));
